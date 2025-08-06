@@ -3,3 +3,26 @@
   margin: 0;
   padding: 0;
 }
+
+.container {
+  position: absolute;
+  left: 0;
+  background-image: url(imgs/halie-west-25xggax4bSA-unsplash.jpg);
+  background-size: cover;
+  display: flex;
+  height: 100vh;
+  width: 30%;
+}
+
+.odin-holder {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  top: 100px;
+  background-color: black;
+  opacity: 0.5;
+  width: 100%;
+  height: 40px;
+}
