@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Nata+Sans:wght@100..900&display=swap");
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -6,6 +8,7 @@
 
 body {
   background-color: black;
+  font-family: "Nata Sans", sans-serif;
 }
 
 @font-face {
@@ -17,7 +20,7 @@ body {
   position: absolute;
   display: flex;
   height: 100vh;
-  width: 70%;
+  width: 80%;
   background-color: white;
   top: 50%;
   left: 50%;
@@ -31,7 +34,7 @@ body {
   display: flex;
   left: 0;
   height: 100vh;
-  width: 40%;
+  width: 60%;
 }
 
 .odin-holder {
@@ -39,7 +42,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  top: 150px;
+  top: 160px;
   background-color: rgba(0, 0, 0, 0.5);
   width: 100%;
   height: 15vh;
@@ -54,4 +57,104 @@ body {
 
 .odin-holder img {
   height: 100px;
+}
+
+.sign-up-container {
+  background-color: #f2f2f2;
+  width: 100%;
+}
+
+.info {
+  position: relative;
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  left: 50px;
+  top: 100px;
+}
+
+.info h3 {
+  font-weight: bold;
+}
+
+.info h3:last-of-type {
+  padding-top: 20px;
+}
+
+.sign-up-form {
+  background-color: white;
+  position: relative;
+  width: 100%;
+  height: 300px;
+  top: 150px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.motivate {
+  padding: 10px 5px 10px 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: row;
+  padding-left: 10px;
+  width: 600px;
+}
+
+form input {
+  width: 200px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  padding: 5px;
+}
+
+form input:focus {
+  border-color: blue; /* change border color on focus */
+  outline: none;
+  box-shadow: 0 0 5px black;
+}
+
+form input:invalid:focus {
+  border-color: red; /* change border color on focus */
+  outline: none;
+  box-shadow: 0 0 5px black;
+}
+
+form label {
+  color: rgb(118, 118, 118);
+  display: block;
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.account-container {
+  position: relative;
+  display: block;
+  top: 40px;
+  left: 20px;
+}
+
+.account-container button {
+  background-color: #596d48;
+  border-radius: 5px;
+  width: 25ch;
+  height: 40px;
+  color: white;
+  border: none;
+  /* box-shadow: 5px 4px 1px rgba(0, 0, 0, 0.5); */
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.account-container p {
+  font-size: 14px;
+  margin-top: 10px;
 }
